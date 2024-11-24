@@ -1,0 +1,10 @@
+<div>Welcoming: {{VAR1}}</div>
+<img [src]="VAR2"  height="250px">
+<div>Event Binding : <button (click)="Function1()">click me</button></div>
+<div>Twoway DataBinding: <input type="text" [(ngModel)]="VAR3"></div>
+<div *ngIf="VAR1 else id"> <h6>bonjourrrr</h6></div>
+<ng-template #id>bonsoirrrr</ng-template>
+<ul *ngFor="let item of MyList , let i=index ">
+   <li>{{i+1}}*{{item}}</li>
+    
+</ul>

@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RendenceDetailsComponent } from './rendence-details.component';
+import { RendenceDetailsComponent } from './Rendence-details.component';
 
 describe('RendenceDetailsComponent', () => {
   let component: RendenceDetailsComponent;

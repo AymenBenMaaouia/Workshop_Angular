@@ -9,7 +9,13 @@
     <button (click)="toggleAddress(i)">Show Location</button>
     <button (click)="addToFavorites(residence)">❤️ Like</button>
     <button [routerLink]="['/residence', residence.id]">Voir Détails</button>
-
+    <button (click)="addResidence()">Add Residence</button>
+    <button (click)="updateResidence()">Update Residence</button>
+    <div *ngFor="let residence of residence">
+      <h3>{{ residence.name }}</h3>
+      <button (click)="viewApartments(residence.id)">View Apartments</button>
+    </div>
+    
     
    
     <ng-container [ngSwitch]="residence.status">
@@ -17,6 +23,7 @@
       <span *ngSwitchCase="'En Construction'" style="color: orange;">🔧 En Construction</span>
       <span *ngSwitchCase="'Vendu'" style="color: red;">❌ Vendu</span>
     </ng-container>
+
   </div>
   
   

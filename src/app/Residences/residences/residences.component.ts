@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
 import { Residence } from 'src/app/core/models/residence';
+import { Router } from '@angular/router';
+
 
 @Component({
-  selector: 'app-residences',
+  selector: 'app-residence-details',
   templateUrl: './residences.component.html',
   styleUrls: ['./residences.component.css']
 })
@@ -38,5 +40,18 @@ export class ResidencesComponent {
  
   addToFavorites(residence: Residence): void {
     alert(`${residence.name} ajouté aux favoris.`);
+  }
+  constructor(private router: Router) {}
+
+  addResidence() {
+    this.router.navigate(['/add-residence']);
+  }
+
+  updateResidence() {
+    const residenceId = 1; // Remplacez par l'ID de la résidence en cours
+    this.router.navigate(['/add-residence'], { queryParams: { id: residenceId } });
+  }
+  viewApartments(residenceId: number) {
+    this.router.navigate(['/apartments/residence', residenceId]);
   }
 }

@@ -9,7 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { ResidencesComponent } from './Residences/residences/residences.component';
-import { RendenceDetailsComponent } from './rendences/rendence-details/rendence-details.component';
+import { RendenceDetailsComponent } from './Rendences/rendence-details/rendence-details.component';
 import { AddResidenceComponent } from './rendences/add-residence/add-residence.component';
 import { ApartmentsComponent } from './Apartments/apartments/apartments.component';
 import { ApartmentsByResidenceComponent } from './Apartments/apartments-by-residence/apartments-by-residence.component';

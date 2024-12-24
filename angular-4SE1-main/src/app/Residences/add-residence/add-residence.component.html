@@ -1,0 +1,47 @@
+<div class="container mt-4">
+  <h3>{{ isEditMode ? 'Update Residence' : 'Add Residence' }}</h3>
+
+  <form [formGroup]="addResidenceForm" (ngSubmit)="saveResidence()">
+    <!-- Champ Name -->
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" formControlName="name" class="form-control" />
+    </div>
+
+    <!-- Champ Address -->
+    <div class="form-group">
+      <label for="address">Address</label>
+      <input type="text" id="address" formControlName="address" class="form-control" />
+    </div>
+
+    <!-- Champ Image -->
+    <div class="form-group">
+      <label for="image">Image URL</label>
+      <input type="text" id="image" formControlName="image" class="form-control" />
+    </div>
+
+    <!-- Champ Status -->
+    <div class="form-group">
+      <label>Status</label>
+      <div>
+        <input type="radio" id="disponible" formControlName="status" value="Disponible" />
+        <label for="disponible">Disponible</label>
+      </div>
+      <div>
+        <input type="radio" id="construction" formControlName="status" value="En Construction" />
+        <label for="construction">En Construction</label>
+      </div>
+      <div>
+        <input type="radio" id="vendu" formControlName="status" value="Vendu" />
+        <label for="vendu">Vendu</label>
+      </div>
+    </div>
+
+
+    <!-- Bouton Save -->
+    <button type="submit" class="btn btn-primary mt-3" [disabled]="addResidenceForm.invalid">
+      {{ isEditMode ? 'Update' : 'Add' }}
+    </button>
+  </form>
+</div>
+<input type="text" ..................="date"/>

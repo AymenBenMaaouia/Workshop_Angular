@@ -1,0 +1,39 @@
+{
+  "residences": [
+    {
+      "id": "1",
+      "name": "El felllll",
+      "address": "Borj Cedria",
+      "image": "../../assets/images/R1.jpg",
+      "status": "Disponible"
+    },
+    {
+      "id": "2",
+      "name": "El yassmin",
+      "address": "Borj Cedria",
+      "image": "../../assets/images/R1.jpg",
+      "status": "Vendu"
+    },
+    {
+      "id": "3",
+      "name": "ahlem",
+      "address": "Borj Cedria",
+      "image": "../../assets/images/R1.jpg",
+      "status": "Disponible"
+    }
+  ],
+  "apartments": [
+    {
+      "id": "1",
+      "apartNum": 11,
+      "surface": 100,
+      "ResidenceId": 1
+    },
+    {
+      "id": "2",
+      "apartNum": 102,
+      "surface": 150,
+      "ResidenceId": 1
+    }
+  ]
+}
